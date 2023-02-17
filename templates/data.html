@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data</title>
+</head>
+
+<body>
+    <h1>This Is Two Tables Common Data</h1>
+    <table border="3px">
+        <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>marks</td>
+            <td>mobile</td>
+            <td>place</td>
+        </tr>
+        {% for j in obj %}
+        <tr>
+            <td>{{j.name}}</td>
+            <td>{{j.age}}</td>
+            <td>{{j.marks}}</td>
+            <td>{{j.mobile}}</td>
+            <td>{{j.place}}</td>
+        </tr> {% endfor %}
+    </table>
+</body>
+
+</html>
